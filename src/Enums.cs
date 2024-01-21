@@ -145,6 +145,16 @@
             mirror,
         }
 
+		//https://github.com/Microsoft/DirectXTex/wiki/Texconv#colorspace-options
+        public enum sRGBColorSpace
+        {
+            none,
+            srgbi,
+            srgbo,
+			srgb,
+        }
+		
+		
         public static string SupportedInputFileTypesEnum(TexConvGuiEnums.SupportedInputFileTypes e) => e.ToString();
 
         public static string DXGI_FORMATEnum(TexConvGuiEnums.DXGI_FORMAT e) => e.ToString();
@@ -152,5 +162,7 @@
         public static string ImageFilterEnum(TexConvGuiEnums.ImageFilter e) => e.ToString();
 
         public static string TextureAdressingModeEnum(TexConvGuiEnums.TextureAddressingMode e) => e.ToString();
+		
+		public static string sRGBColorSpaceEnum(TexConvGuiEnums.sRGBColorSpace e) => e.ToString();
     }
 }

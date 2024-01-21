@@ -25,6 +25,8 @@
 
         public const string OutputFormat = "[-f] Specifies the DXGI format.";
         public const string MipMapLevel = "[-m] Number of mipmap levels to generate in the output texture.\n A setting of 0 will generate all mipmaps. Use 1 to remove mipmaps.";
+		
+		public const string sRGB = "[-srgb, -srgbi, or -srgbo] Use sRGB if both the input and output data are in the sRGB \n color format (ie. gamma ~2.2). Use sRGBi if only the input is in sRGB; \n  use sRGBo if only the output is in sRGB.";
     }
 }
 
